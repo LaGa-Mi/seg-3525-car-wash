@@ -1,4 +1,5 @@
 import NavBar from './sub-components/NavBar';
+import { Outlet, Link } from "react-router-dom";
 
 function Main() {
     return (
@@ -14,7 +15,7 @@ function Main() {
             <p className="h4">Monday - Friday: 9 AM - 5 PM</p>
             <p className="h4">Saturday: 10 AM - 4 PM</p>
             <p className="h4">Sunday: Closed</p>
-            <a href="./BookNow"><button className="btn btn-primary btn-lg mt-3"><p className="h5">Book Now</p></button></a>
+            <Link to="/#/BookNow"><button className="btn btn-primary btn-lg mt-3"><p className="h5">Book Now</p></button></Link>
         </div>
     </div>
     </>

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Routes, Route, BrowserRouter } from 'react-router-dom'; 
 import './sass/styles.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+//import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 
 import Main from './components/Main';
 import About from './components/About';
@@ -12,6 +13,7 @@ import Services from './components/Services'
 import BookNow from './components/BookNow'
 import Career from './components/Career'
 
+/*
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,4 +52,21 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router}/>
+);
+*/
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter basename={process.env.PUBLIC_URL}> 
+        <Routes> 
+          <Route path='/'element={<Main />} /> 
+          <Route path='/About'element={<About />} /> 
+          <Route path='/OurExperts'element={<OurExperts />} /> 
+          <Route path='/Services'element={<Services />} /> 
+          <Route path='/BookNow'element={<BookNow />} />
+          <Route path='/BookNow/Login'element={<BookNow Login={true} />} />
+          <Route path='/BookNow/SignUp'element={<BookNow SignUp={true} />} />
+          <Route path='/Career'element={<Career />} /> 
+        </Routes>
+  </BrowserRouter> 
 );

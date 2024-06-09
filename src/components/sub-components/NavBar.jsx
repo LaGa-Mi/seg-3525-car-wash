@@ -1,26 +1,30 @@
+import { Outlet, Link } from "react-router-dom";
+
 function NavBar(props) {
     return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-75" style={{zIndex:"1"}}>
         <div className="container">
-            <a className="navbar-brand" href="./">Company Name</a>
+            <Link className="navbar-brand" to="/">Company Name</Link>
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                    <a className={"nav-link" + ((props.active === "Home") ? " active":"")} href="../">Home</a>
+                    <Link className={"nav-link" + ((props.active === "Home") ? " active":"")} to="/">Home</Link>
+                    {/*<a className={"nav-link" + ((props.active === "Home") ? " active":"")} href="../">Home</a>*/}
                 </li>
                 <li className="nav-item">
-                    <a className={"nav-link" + ((props.active === "About") ? " active":"")} href="About">About</a>
+                    <Link className={"nav-link" + ((props.active === "About") ? " active":"")} to="/#/About">About</Link>
                 </li>
                 <li className="nav-item">
-                    <a className={"nav-link" + ((props.active === "OurExperts") ? " active":"")} href="OurExperts">Our experts</a>
+                    <Link className={"nav-link" + ((props.active === "OurExperts") ? " active":"")} to="/#/OurExperts">Our experts</Link>
                 </li>
                 <li className="nav-item">
-                    <a className={"nav-link" + ((props.active === "Services") ? " active":"")} href="Services">Services</a>
+                    <Link className={"nav-link" + ((props.active === "Services") ? " active":"")} to="/#/Services">Services</Link>
                 </li>
                 <li className="nav-item">
-                    <a className={"nav-link" + ((props.active === "BookNow") ? " active":"")} href="BookNow">Book now</a>
+                    <Link className={"nav-link" + ((props.active === "BookNow") ? " active":"")} to="/#/BookNow">Book now</Link>
                 </li>
                 <li className="nav-item">
-                    <a className={"nav-link" + ((props.active === "Career") ? " active":"")} href="Career">Career</a>
+                    <Link className={"nav-link" + ((props.active === "Career") ? " active":"")} to="/#/Career">Career</Link>
                 </li>
             </ul>
             <form className="d-flex ms-1">
@@ -29,20 +33,21 @@ function NavBar(props) {
             </form>
             <ul className="navbar-nav ms-1">
                 <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="./" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        My Account
-                    </a>
+                    <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="#">Account info</a></li>
-                        <li><a className="dropdown-item" href="#">My bookings</a></li>
+                        <Link className="dropdown-item" to="#">Account info</Link>
+                        <Link className="dropdown-item" to="#">My bookings</Link>
                         <li><hr className="dropdown-divider"/></li>
-                        <li><a className="dropdown-item" href="BookNow/Login">Login</a></li>
-                        <li><a className="dropdown-item" href="BookNow/SignUp">Sign up</a></li>
+                        <Link className="dropdown-item" to="/#/BookNow/Login">Login</Link>
+                        <Link className="dropdown-item" to="/#/BookNow/SignUp">Sign up</Link>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <Outlet/>
+    </>
     );
 }
   

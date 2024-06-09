@@ -1,3 +1,5 @@
+import { Outlet, Link } from "react-router-dom";
+
 function ServiceCard(props) {
     return (
     <div className="card mx-5" style={{width: "20rem"}}>
@@ -11,7 +13,7 @@ function ServiceCard(props) {
                     <li key={index}>{str}</li>
                 ))}
             </ul>
-            <a href="./" className="btn btn-primary mt-2">{"Book Now for " + props.price}</a>
+            <Link className="btn btn-primary mt-2" to="/#/BookNow">{"Book Now for " + props.price}</Link>
             <div className="bg-secondary bg-opacity-50 mt-2 w-75 rounded mx-auto">
                 {props.subscription}
             </div>
