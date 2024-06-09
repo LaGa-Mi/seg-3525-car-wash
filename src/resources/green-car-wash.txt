@@ -1,0 +1,2 @@
+https://deepai.org/machine-learning-model/text2img
+Prompt: Green themed car wash seen from the street
