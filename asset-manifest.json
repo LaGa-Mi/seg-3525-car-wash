@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/seg-3525-car-wash/static/css/main.6d045cac.css",
-    "main.js": "/seg-3525-car-wash/static/js/main.19fb01e5.js",
+    "main.js": "/seg-3525-car-wash/static/js/main.52932a8f.js",
     "static/media/generic-presure-wash.png": "/seg-3525-car-wash/static/media/generic-presure-wash.561ff591dae0f16ff38f.png",
     "static/media/main-bg.jpg": "/seg-3525-car-wash/static/media/main-bg.abd3fc81ba91a04991c3.jpg",
     "static/media/generic-polishing.png": "/seg-3525-car-wash/static/media/generic-polishing.8df879720a0c9b6ab5bc.png",
@@ -16,10 +16,10 @@
     "static/media/JaneDoe.jpg": "/seg-3525-car-wash/static/media/JaneDoe.0e5a11e4aa0e15c02dde.jpg",
     "index.html": "/seg-3525-car-wash/index.html",
     "main.6d045cac.css.map": "/seg-3525-car-wash/static/css/main.6d045cac.css.map",
-    "main.19fb01e5.js.map": "/seg-3525-car-wash/static/js/main.19fb01e5.js.map"
+    "main.52932a8f.js.map": "/seg-3525-car-wash/static/js/main.52932a8f.js.map"
   },
   "entrypoints": [
     "static/css/main.6d045cac.css",
-    "static/js/main.19fb01e5.js"
+    "static/js/main.52932a8f.js"
   ]
 }
