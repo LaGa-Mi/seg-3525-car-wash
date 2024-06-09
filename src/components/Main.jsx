@@ -15,7 +15,7 @@ function Main() {
             <p className="h4">Monday - Friday: 9 AM - 5 PM</p>
             <p className="h4">Saturday: 10 AM - 4 PM</p>
             <p className="h4">Sunday: Closed</p>
-            <Link to="/#/BookNow"><button className="btn btn-primary btn-lg mt-3"><p className="h5">Book Now</p></button></Link>
+            <Link to="/BookNow"><button className="btn btn-primary btn-lg mt-3"><p className="h5">Book Now</p></button></Link>
         </div>
     </div>
     </>

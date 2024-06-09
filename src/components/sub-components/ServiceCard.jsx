@@ -13,7 +13,7 @@ function ServiceCard(props) {
                     <li key={index}>{str}</li>
                 ))}
             </ul>
-            <Link className="btn btn-primary mt-2" to="/#/BookNow">{"Book Now for " + props.price}</Link>
+            <Link className="btn btn-primary mt-2" to="/BookNow">{"Book Now for " + props.price}</Link>
             <div className="bg-secondary bg-opacity-50 mt-2 w-75 rounded mx-auto">
                 {props.subscription}
             </div>

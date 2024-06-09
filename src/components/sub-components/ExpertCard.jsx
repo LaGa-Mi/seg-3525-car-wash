@@ -28,7 +28,7 @@ function ExpertCard(props) {
                 </div>
             </div>
             <div className="d-flex justify-content-center" style={{width:"100%"}}>
-                <Link to="/#/BookNow"><button className="btn btn-primary px-5"><p className="h4">Book Now</p></button></Link>
+                <Link to="/BookNow"><button className="btn btn-primary px-5"><p className="h4">Book Now</p></button></Link>
             </div>
         </div>
     </div>

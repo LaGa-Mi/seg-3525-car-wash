@@ -12,19 +12,19 @@ function NavBar(props) {
                     {/*<a className={"nav-link" + ((props.active === "Home") ? " active":"")} href="../">Home</a>*/}
                 </li>
                 <li className="nav-item">
-                    <Link className={"nav-link" + ((props.active === "About") ? " active":"")} to="/#/About">About</Link>
+                    <Link className={"nav-link" + ((props.active === "About") ? " active":"")} to="/About">About</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className={"nav-link" + ((props.active === "OurExperts") ? " active":"")} to="/#/OurExperts">Our experts</Link>
+                    <Link className={"nav-link" + ((props.active === "OurExperts") ? " active":"")} to="/OurExperts">Our experts</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className={"nav-link" + ((props.active === "Services") ? " active":"")} to="/#/Services">Services</Link>
+                    <Link className={"nav-link" + ((props.active === "Services") ? " active":"")} to="/Services">Services</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className={"nav-link" + ((props.active === "BookNow") ? " active":"")} to="/#/BookNow">Book now</Link>
+                    <Link className={"nav-link" + ((props.active === "BookNow") ? " active":"")} to="/BookNow">Book now</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className={"nav-link" + ((props.active === "Career") ? " active":"")} to="/#/Career">Career</Link>
+                    <Link className={"nav-link" + ((props.active === "Career") ? " active":"")} to="/Career">Career</Link>
                 </li>
             </ul>
             <form className="d-flex ms-1">
@@ -38,8 +38,8 @@ function NavBar(props) {
                         <Link className="dropdown-item" to="#">Account info</Link>
                         <Link className="dropdown-item" to="#">My bookings</Link>
                         <li><hr className="dropdown-divider"/></li>
-                        <Link className="dropdown-item" to="/#/BookNow/Login">Login</Link>
-                        <Link className="dropdown-item" to="/#/BookNow/SignUp">Sign up</Link>
+                        <Link className="dropdown-item" to="/BookNow/Login">Login</Link>
+                        <Link className="dropdown-item" to="/BookNow/SignUp">Sign up</Link>
                     </ul>
                 </li>
             </ul>
