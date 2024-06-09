@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d045cac.css",
-    "main.js": "/static/js/main.c6dbac0a.js",
-    "static/media/generic-presure-wash.png": "/static/media/generic-presure-wash.561ff591dae0f16ff38f.png",
-    "static/media/main-bg.jpg": "/static/media/main-bg.abd3fc81ba91a04991c3.jpg",
-    "static/media/generic-polishing.png": "/static/media/generic-polishing.8df879720a0c9b6ab5bc.png",
-    "static/media/services.png": "/static/media/services.58f192cc722681808914.png",
-    "static/media/deluxe-interior-wash.png": "/static/media/deluxe-interior-wash.3841f4f15beeb7a54428.png",
-    "static/media/premium-interior-wash.png": "/static/media/premium-interior-wash.bfe872ff940c3d3ea045.png",
-    "static/media/Obi.jpg": "/static/media/Obi.55e6a81997124819e362.jpg",
-    "static/media/green-car-wash.jpg": "/static/media/green-car-wash.6bebf0ba4ec8aad98f24.jpg",
-    "static/media/basic-interior-wash.jpg": "/static/media/basic-interior-wash.5b2c91b554c69dc184d2.jpg",
-    "static/media/JohnDoe.jpg": "/static/media/JohnDoe.0da20279e5eb9a4b6467.jpg",
-    "static/media/generic-car-wash.jpg": "/static/media/generic-car-wash.c290957390e6e3014da9.jpg",
-    "static/media/JaneDoe.jpg": "/static/media/JaneDoe.0e5a11e4aa0e15c02dde.jpg",
-    "index.html": "/index.html",
-    "main.6d045cac.css.map": "/static/css/main.6d045cac.css.map",
-    "main.c6dbac0a.js.map": "/static/js/main.c6dbac0a.js.map"
+    "main.css": "/seg-3525-car-wash/static/css/main.6d045cac.css",
+    "main.js": "/seg-3525-car-wash/static/js/main.a3cf0871.js",
+    "static/media/generic-presure-wash.png": "/seg-3525-car-wash/static/media/generic-presure-wash.561ff591dae0f16ff38f.png",
+    "static/media/main-bg.jpg": "/seg-3525-car-wash/static/media/main-bg.abd3fc81ba91a04991c3.jpg",
+    "static/media/generic-polishing.png": "/seg-3525-car-wash/static/media/generic-polishing.8df879720a0c9b6ab5bc.png",
+    "static/media/services.png": "/seg-3525-car-wash/static/media/services.58f192cc722681808914.png",
+    "static/media/deluxe-interior-wash.png": "/seg-3525-car-wash/static/media/deluxe-interior-wash.3841f4f15beeb7a54428.png",
+    "static/media/premium-interior-wash.png": "/seg-3525-car-wash/static/media/premium-interior-wash.bfe872ff940c3d3ea045.png",
+    "static/media/Obi.jpg": "/seg-3525-car-wash/static/media/Obi.55e6a81997124819e362.jpg",
+    "static/media/green-car-wash.jpg": "/seg-3525-car-wash/static/media/green-car-wash.6bebf0ba4ec8aad98f24.jpg",
+    "static/media/basic-interior-wash.jpg": "/seg-3525-car-wash/static/media/basic-interior-wash.5b2c91b554c69dc184d2.jpg",
+    "static/media/JohnDoe.jpg": "/seg-3525-car-wash/static/media/JohnDoe.0da20279e5eb9a4b6467.jpg",
+    "static/media/generic-car-wash.jpg": "/seg-3525-car-wash/static/media/generic-car-wash.c290957390e6e3014da9.jpg",
+    "static/media/JaneDoe.jpg": "/seg-3525-car-wash/static/media/JaneDoe.0e5a11e4aa0e15c02dde.jpg",
+    "index.html": "/seg-3525-car-wash/index.html",
+    "main.6d045cac.css.map": "/seg-3525-car-wash/static/css/main.6d045cac.css.map",
+    "main.a3cf0871.js.map": "/seg-3525-car-wash/static/js/main.a3cf0871.js.map"
   },
   "entrypoints": [
     "static/css/main.6d045cac.css",
-    "static/js/main.c6dbac0a.js"
+    "static/js/main.a3cf0871.js"
   ]
 }
