@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 import NavBar from './sub-components/NavBar';
 
@@ -12,6 +13,19 @@ function BookNow(props) {
     const [showSignUp, setShowSignUp] = useState(props.SignUp ? true : false);
     const [showConfirmation, setShowConfirmation] = useState(false);
     const [confirmationData, setConfirmationData] = useState([]);
+
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = require("../js/calendar.js");
+        script.async = true;
+      
+        document.body.appendChild(script);
+      
+        return () => {
+          document.body.removeChild(script);
+        }
+    }, []);
 
     function handleBookClick() {
         setShowLogin(true);
@@ -102,8 +116,6 @@ function BookNow(props) {
         <div className="d-flex justify-content-center mt-4">
             <button className="btn btn-primary" onClick={handleBookClick}>Book</button>
         </div>
-        {/*This script was made with the assistance of chat-GPT*/}
-        <script src={require("../js/calendar.js")}></script>
 
         {showLogin ? 
         <div className='d-flex justify-content-center align-items-center position-absolute vh-100 vw-100 bg-black top-0 z-2 bg-opacity-75'>
@@ -113,13 +125,13 @@ function BookNow(props) {
                     <button className='btn btn-dark mb-3 me-1 mt-1' onClick={() => {setShowLogin(false);}}>X</button>
                 </div>
                 <div className='d-flex flex-column p-4'>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="Email"/>
+                    <div className="input-group mb-3">
+                        <input type="text" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="Email"/>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="Password"/>
+                    <div className="input-group mb-3">
+                        <input type="text" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="Password"/>
                     </div>
-                    <button class="btn btn-primary" onClick={handleLoginClick}>Login</button>
+                    <button className="btn btn-primary" onClick={handleLoginClick}>Login</button>
                     <a href='#' onClick={() => {setShowLogin(false);setShowSignUp(true);}}>Don't have an account? Create one!</a>
                 </div>
             </div>
@@ -132,22 +144,22 @@ function BookNow(props) {
                         <button className='btn btn-dark mb-3 me-1 mt-1' onClick={() => { setShowSignUp(false); }}>X</button>
                     </div>
                     <div className='d-flex flex-column p-4'>
-                        <div class="input-group mb-3">
-                            <input id="signupFirstName" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="First Name" />
+                        <div className="input-group mb-3">
+                            <input id="signupFirstName" type="text" className="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="First Name" />
                         </div>
-                        <div class="input-group mb-3">
-                            <input id="signupLastName" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="Last Name" />
+                        <div className="input-group mb-3">
+                            <input id="signupLastName" type="text" className="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="Last Name" />
                         </div>
-                        <div class="input-group mb-3">
-                            <input id="signupEmail" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="Email" />
+                        <div className="input-group mb-3">
+                            <input id="signupEmail" type="text" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="Email" />
                         </div>
-                        <div class="input-group mb-3">
-                            <input id="signupPassword" type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="Password" />
+                        <div className="input-group mb-3">
+                            <input id="signupPassword" type="text" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="Password" />
                         </div>
-                        <div class="input-group mb-3">
-                            <input id="signupPasswordConfirm" type="text" class="form-control" placeholder="Password Confirm" aria-label="Password Confirm" aria-describedby="Password Confirm" />
+                        <div className="input-group mb-3">
+                            <input id="signupPasswordConfirm" type="text" className="form-control" placeholder="Password Confirm" aria-label="Password Confirm" aria-describedby="Password Confirm" />
                         </div>
-                        <button class="btn btn-primary" onClick={handleSignupClick}>Sign Up</button>
+                        <button className="btn btn-primary" onClick={handleSignupClick}>Sign Up</button>
                     </div>
                 </div>
             </div> : ""}

@@ -1,4 +1,4 @@
-import $ from 'jquery'
+import $ from 'jquery';
 
 /*******************************************************************************************
  * This calendar script was made with the assistance of chat-GPT
