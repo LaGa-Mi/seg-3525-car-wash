@@ -14,19 +14,6 @@ function BookNow(props) {
     const [showConfirmation, setShowConfirmation] = useState(false);
     const [confirmationData, setConfirmationData] = useState([]);
 
-    useEffect(() => {
-        const script = document.createElement('script');
-      
-        script.src = "../js/calendar.js";
-        script.async = true;
-      
-        document.body.appendChild(script);
-      
-        return () => {
-          document.body.removeChild(script);
-        }
-    }, []);
-
     function handleBookClick() {
         setShowLogin(true);
         setConfirmationData([
@@ -100,6 +87,7 @@ function BookNow(props) {
                 {/*******************************************************************************************
                  * Calendar section end
                  *******************************************************************************************/}
+                 <script src={require("../js/calendar")}></script>
                 <div className="d-flex col-3">
                     <div className="input-group my-auto">
                         <label className="input-group-text" htmlFor="specialistSelect"><span style={{ color: "red" }}>*</span>&nbsp;&nbsp;Time</label>
