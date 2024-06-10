@@ -17,7 +17,7 @@ function BookNow(props) {
     useEffect(() => {
         const script = document.createElement('script');
       
-        script.src = require("../js/calendar.js");
+        script.src = "../js/calendar.js";
         script.async = true;
       
         document.body.appendChild(script);
@@ -178,7 +178,7 @@ function BookNow(props) {
                     </div>
                     <div className='d-flex flex-column p-4'>
                         <h1>{document.getElementById("signupFirstName")}</h1>
-                        <button class="btn btn-primary" onClick={handleConfirmClick}>Confirm</button>
+                        <button className="btn btn-primary" onClick={handleConfirmClick}>Confirm</button>
                     </div>
                 </div>
             </div>: ""}
